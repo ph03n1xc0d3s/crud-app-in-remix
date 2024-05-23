@@ -3,10 +3,8 @@ import { Form } from "@remix-run/react";
 
 export default function UpdateBookForm({
     book,
-    onClose,
 }: {
     book: any;
-    onClose: any;
 }) {
     const [title, setTitle] = useState(book.name);
     const [author, setAuthor] = useState(book.author);
@@ -70,8 +68,4 @@ export default function UpdateBookForm({
 
         </div>
     );
-}
-
-export async function action({ request }: { request: any }) {
-    return true;
 }

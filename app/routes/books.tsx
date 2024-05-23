@@ -65,7 +65,6 @@ export default function Book() {
                 {showUpdateForm && (
                     <UpdateForm
                         book={selectedBook}
-                        onClose={() => setShowUpdateForm(false)}
                     />
                 )}
             </div>
